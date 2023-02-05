@@ -19,4 +19,5 @@ export const theme = extendTheme({
       },
     }),
   },
+  components: {},
 });
