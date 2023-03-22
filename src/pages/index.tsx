@@ -1,3 +1,4 @@
+import Feature from '@src/components/Feature/Feature';
 import Hero from '@src/components/Hero/Hero';
 import Head from 'next/head';
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
+        <Feature />
       </main>
     </>
   );
