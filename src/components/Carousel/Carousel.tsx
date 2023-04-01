@@ -32,7 +32,7 @@ const Carousel: React.FC = () => {
   const top = useBreakpointValue({ base: '90%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '10px' });
   return (
-    <Container maxW='container.lg'>
+    <Container maxW='container.lg' mt={5}>
       <Box
         position={'relative'}
         height={'600px'}
