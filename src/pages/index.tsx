@@ -1,3 +1,4 @@
+import Carousel from '@src/components/Carousel/Carousel';
 import Feature from '@src/components/Feature/Feature';
 import Hero from '@src/components/Hero/Hero';
 import Head from 'next/head';
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <Feature />
+        <Carousel />
       </main>
     </>
   );
