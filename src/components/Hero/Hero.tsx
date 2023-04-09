@@ -1,4 +1,4 @@
-import sunsetImage from 'public/pac_sunset.jpg';
+import homeImage from 'public/pac_sunset.jpg';
 
 function MyComponent() {
   return (
@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = () => {
     <>
       <Box pos="relative" w="100%" h="70vh">
       <Image
-        src="/pac_sunset.jpg"
+        src="/held_hand.jpg"
         alt="description-of-your-image"
         h="100%"
         w="100%"
@@ -43,7 +43,7 @@ const Hero: React.FC<HeroProps> = () => {
         left="0"
         w="100%"
         h="100%"
-        bg="rgba(0, 0, 0, 0.5)"
+        bg="rgba(0, 0, 0, 0.6)"
       />
       <Flex
         pos="absolute"
@@ -58,16 +58,14 @@ const Hero: React.FC<HeroProps> = () => {
         textAlign="center"
         zIndex="1"
       >
-        <Heading as="h2" size="xl" mb="2">
-        SENIOR LIVING: BEYOND YOUR EXPECTATIONS
-        </Heading>
-        <Text fontSize="2xl" testAlign = "center" mb="5" fontWeight="semibold" w="155%">
-      Nestled against the iconic Hollywood Hills and surrounded by
-      world-class arts, culture, and cuisine, you will find a unique
-      lifestyle opportunity in Los Angeles, California. At Hollywood
-      Hills Senior Living, we balance professional care with the ability
-      to live as independently as possible. We offer Assisted Living,
-      Memory Care, and Respite Care apartments.  
+        <Heading as="h2" size="xl" mb="5">
+        Senior Living: 39 Years of Exceeding Expectations and Community Excellence       </Heading>
+        <Text fontSize="2xl" textAlign = "center" mb="5" fontWeight="semibold" w="155%">
+        Pledgervile Senior Citizen Villa is a cherished landmark in the Northeast San Fernando Valley. The 
+        housing project, which was built on top of the esteemed Pacoima soil, has become an emblem of community 
+        pride for its residents. It is noteworthy for being the first housing project designed for seniors and 
+        disabled individuals in the area, opening its doors in May 1984. Since then, Pledgerville has been making
+        a positive impact on the lives of its residents, solidifying its status as an important part of the community. 
         </Text>
       </Flex>
     </Box>
@@ -76,4 +74,5 @@ const Hero: React.FC<HeroProps> = () => {
   );
 };
 export default Hero;
+
  
