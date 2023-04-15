@@ -1,5 +1,6 @@
 import Carousel from '@src/components/Carousel/Carousel';
 import Contact from '@src/components/Contact/Contact';
+import Details from '@src/components/Details/Details';
 import Feature from '@src/components/Feature/Feature';
 import Hero from '@src/components/Hero/Hero';
 import Services from '@src/components/Services/Services';
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Feature />
         <Carousel />
+        <Details />
         <Services />
         <Contact />
       </main>
