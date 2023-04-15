@@ -3,6 +3,7 @@ import Contact from '@src/components/Contact/Contact';
 import Details from '@src/components/Details/Details';
 import Feature from '@src/components/Feature/Feature';
 import Hero from '@src/components/Hero/Hero';
+import Separator from '@src/components/Separator/Separator';
 import Services from '@src/components/Services/Services';
 import Head from 'next/head';
 
@@ -18,9 +19,13 @@ export default function Home() {
       <main>
         <Hero />
         <Feature />
+        <Separator text='Photos' />
         <Carousel />
+        <Separator text='Details' />
         <Details />
+        <Separator text='Services' />
         <Services />
+        <Separator text='Contact' />
         <Contact />
       </main>
     </>
