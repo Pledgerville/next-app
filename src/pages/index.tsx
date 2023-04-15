@@ -2,6 +2,7 @@ import Carousel from '@src/components/Carousel/Carousel';
 import Contact from '@src/components/Contact/Contact';
 import Feature from '@src/components/Feature/Feature';
 import Hero from '@src/components/Hero/Hero';
+import Services from '@src/components/Services/Services';
 import Head from 'next/head';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Feature />
         <Carousel />
+        <Services />
         <Contact />
       </main>
     </>
