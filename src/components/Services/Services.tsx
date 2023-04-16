@@ -43,15 +43,15 @@ const Services: React.FC = () => {
   const services: ServiceProps[] = [
     {
       imageUrl: '/play-time.jpg',
-      title: 'AMENITIES & SERVICES',
+      title: 'SERVICES',
       description:
-        'An Engaged Lifestyle. Extraordinary Events. Elevated Experiences. Seize your moment to participate in inspiring activities, every day! Our on-site amenities provide you with everything from pampering and self-care treatments, to a full calendar of social events, to physical activities for all levels of ability! There is always something happening in your new community, stimulating the mind and strengthening the body, with interesting activities and extraordinary outings that are simply a part of everyday life. Do you enjoy listening to a visiting pianist’s performance or heading to the theater to screen classic pictures and contemporary blockbusters? Or do you prefer staying fit or taking a stroll through lushly landscaped courtyards and picnic areas? There’s always plenty to do with friendly neighbors. Engage in your best life today!',
+      "The Service Coordinator in the Multifamily Housing program will assist the elderly residents and non-elderly residents with disabilities living at Pledgerville to obtain needed supportive services from the community.  This assistance enables them to continue living as independently as possible in their homes.  The service coordinator is responsible for assuring that elderly residents with disabilities are linked to the supportive services they need to continue living independently in their current homes. The Service Coordinator program at Pledgerville will involve programs that will empower and transform the residents’ lives.  A Resident Council and Neighborhood Network Center will be established to help residents make transformative changes within themselves and encourage social and cultural activities and events."
     },
     {
-      imageUrl: '/monarch_society.jpg',
-      title: 'INDEPENDENT & ASSISTED LIVING, MEMORY CARE',
+      imageUrl: '/purple_flowers.jpg',
+      title: 'INDEPENDENT LIVING',
       description:
-        'Luxury Senior Living, Redefined. You deserve to live your best life. We’re determined to help. We create Senior Living communities that feel like you’re on vacation, every day. Our communities inspire you to flourish, with a selection of homes that are contemporary, yet timeless. Sophisticated, yet comfortable. We provide custom care for all of our residents, tailored to their specific needs. Our communities give you a new standard for senior living, with inspired independent living, state-of-the-art assisted living and forward-thinking memory care — all thoughtfully designed for you! Choose your beautifully designed residence, with floor plans ranging from a spacious 1-bedroom homes, to spectacular penthouse. We give you uncompromising luxury homes that are the perfect home base to take advantage of inspiring opportunities, enhanced by premium amenities and services.',
+        "The objectives and focus of the Pledgerville Resident Council include helping residents see how they can contribute to their community, bringing people together as often as possible, ensuring that programs represent the diversity of the residents, and encouraging multi-cultural activities and events.",
     },
     {
       imageUrl: '/wheel_chair.jpg',
