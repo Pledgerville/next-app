@@ -25,13 +25,23 @@ import {
   MdOutlineEmail,
 } from 'react-icons/md';
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
+
+const sizes = {
+
+  lg: defineStyle({
+    maxW: '95ch',
+    p: '8',
+    fontSize: 'xl',
+  }),
+}
 
 const Contact: React.FC = () => {
   return (
-    <Container maxW='container.lg' mt={0} centerContent overflow='hidden'>
+    <Container maxW='container.lg' mt={0} centerContent overflow='hidden' w="100vw">
       <Flex>
         <Box
-          bg='#0D74FF'
+          bg='#c96663'
           color='white'
           borderRadius='lg'
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -41,10 +51,7 @@ const Contact: React.FC = () => {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact Us</Heading>
-                  <Text mt={{ sm: 3, md: 3, lg: 5 }} color='whiteAlpha.800'>
-                    Fill up the form below to contact us.
-                  </Text>
+                  <Heading color={"black"}>Contact Us </Heading>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems='flex-start'>
                       <Button
@@ -54,10 +61,12 @@ const Contact: React.FC = () => {
                         variant='ghost'
                         color='#DCE2FF'
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdPhone color='white' size='20px' />}
+                        leftIcon={<MdPhone color='black' size='20px' />}
                         justifyContent='flex-start'
                       >
-                        +1(818)234-89746
+                 <Text mt={{ sm: 3, md: 3, lg: 5 }} color='blackAlpha.900'>
+                 +1(818) 897-7784
+                  </Text>
                       </Button>
                       <Button
                         size='md'
@@ -66,10 +75,12 @@ const Contact: React.FC = () => {
                         variant='ghost'
                         color='#DCE2FF'
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdEmail color='white' size='20px' />}
+                        leftIcon={<MdEmail color='black' size='20px' />}
                         justifyContent='flex-start'
                       >
-                        contact@pledgerville.com
+                 <Text mt={{ sm: 3, md: 3, lg: 5 }} color='blackAlpha.900'>
+                 contact@pledgerville.com
+                  </Text>   
                       </Button>
                       <Button
                         size='md'
@@ -78,10 +89,12 @@ const Contact: React.FC = () => {
                         variant='ghost'
                         color='#DCE2FF'
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdLocationOn color='white' size='20px' />}
+                        leftIcon={<MdLocationOn color='black' size='20px' />}
                         justifyContent='flex-start'
                       >
-                        California, USA
+                 <Text mt={{ sm: 3, md: 3, lg: 5 }} color='blackAlpha.900'>
+                 San Fernando, CA
+                  </Text>  
                       </Button>
                     </VStack>
                   </Box>
@@ -96,7 +109,7 @@ const Contact: React.FC = () => {
                       variant='ghost'
                       size='lg'
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
+                      _hover={{ bg: '#7e616b' }}
                       icon={<MdFacebook size='28px' />}
                     />
                     <IconButton
@@ -104,7 +117,7 @@ const Contact: React.FC = () => {
                       variant='ghost'
                       size='lg'
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
+                      _hover={{ bg: '#7e616b' }}
                       icon={<BsGithub size='28px' />}
                     />
                     <IconButton
@@ -112,7 +125,7 @@ const Contact: React.FC = () => {
                       variant='ghost'
                       size='lg'
                       isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
+                      _hover={{ bg: '#7e616b' }}
                       icon={<BsDiscord size='28px' />}
                     />
                   </HStack>
@@ -153,7 +166,7 @@ const Contact: React.FC = () => {
                       <FormControl id='name' float='right'>
                         <Button
                           variant='solid'
-                          bg='#0D74FF'
+                          bg='#000000'
                           color='white'
                           _hover={{}}
                         >
@@ -171,5 +184,7 @@ const Contact: React.FC = () => {
     </Container>
   );
 };
+export const containerTheme = defineStyleConfig({ sizes })
 
 export default Contact;
+

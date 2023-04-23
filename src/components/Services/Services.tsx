@@ -43,21 +43,21 @@ const Services: React.FC = () => {
   const services: ServiceProps[] = [
     {
       imageUrl: '/play-time.jpg',
-      title: 'AMENITIES & SERVICES',
+      title: 'SERVICES COORDINATOR',
       description:
-        'An Engaged Lifestyle. Extraordinary Events. Elevated Experiences. Seize your moment to participate in inspiring activities, every day! Our on-site amenities provide you with everything from pampering and self-care treatments, to a full calendar of social events, to physical activities for all levels of ability! There is always something happening in your new community, stimulating the mind and strengthening the body, with interesting activities and extraordinary outings that are simply a part of everyday life. Do you enjoy listening to a visiting pianist’s performance or heading to the theater to screen classic pictures and contemporary blockbusters? Or do you prefer staying fit or taking a stroll through lushly landscaped courtyards and picnic areas? There’s always plenty to do with friendly neighbors. Engage in your best life today!',
+      "At Pledgerville's senior citizens housing, the Service Coordinator will aid both elderly and non-elderly residents with disabilities in acquiring necessary community support services. This aid will enable them to maintain as much independence as possible while living in their homes. The Service Coordinator's responsibility includes ensuring that elderly residents with disabilities receive access to the required supportive services to continue their independent living. In addition to this, the Service Coordinator program will initiate empowering programs at Pledgerville to bring about positive changes in the residents' lives. To foster social and cultural activities and events, a Resident Council and Neighborhood Network Center will be established to promote transformative change among residents."
     },
     {
-      imageUrl: '/monarch_society.jpg',
-      title: 'INDEPENDENT & ASSISTED LIVING, MEMORY CARE',
+      imageUrl: '/purple_flowers.jpg',
+      title: 'INDEPENDENT LIVING',
       description:
-        'Luxury Senior Living, Redefined. You deserve to live your best life. We’re determined to help. We create Senior Living communities that feel like you’re on vacation, every day. Our communities inspire you to flourish, with a selection of homes that are contemporary, yet timeless. Sophisticated, yet comfortable. We provide custom care for all of our residents, tailored to their specific needs. Our communities give you a new standard for senior living, with inspired independent living, state-of-the-art assisted living and forward-thinking memory care — all thoughtfully designed for you! Choose your beautifully designed residence, with floor plans ranging from a spacious 1-bedroom homes, to spectacular penthouse. We give you uncompromising luxury homes that are the perfect home base to take advantage of inspiring opportunities, enhanced by premium amenities and services.',
+      "The Pledgerville Resident Council aims to promote community involvement by encouraging residents to contribute and organizing diverse events that bring people together. They also strive to ensure that programs are inclusive and represent the diversity of the community, while encouraging multi-cultural activities and events. In turn, the Pledgerville Neighborhood Networks Center is committed to providing residents with access to technology and the internet, as well as local services and healthcare options. They offer computer training in a supportive and non-intimidating environment, allowing for shared learning and community involvement. Together, these initiatives work towards creating an inclusive and empowered community where residents feel valued, supported, and engaged."
     },
     {
       imageUrl: '/wheel_chair.jpg',
       title: 'TAKE A VIRTUAL TOUR',
       description:
-        'Experience Your New Home. We invite you to an exclusive Virtual Tour, where you’ll have the opportunity to explore your new home. Our communities come to life from every angle, with thoughtfully designed homes and engaging activities, all ready to enhance your lifestyle. And you can rest easy and move through your day with confidence, knowing that our compassionate caregivers are available any time, day or night. Our weekly housekeeping, laundry, linen services, restaurant, style, dining, social activities, daily fitness classes, and uncompromising life-enhancing amenities, ensure that you will be living your best life, every day!',
+      "Come and explore all that Pledgerville has to offer with an exclusive tour of your new home. From the first shopping center established after the development to a variety of engaging activities, our community comes to life from every angle, enriching your lifestyle. You'll gain insight into the pride that many residents feel when reflecting on the history and visual imagery that our six-story, tri-level building brings. Additionally, during the exclusive tour of your new home, you will have the opportunity to meet our dedicated caregivers, who are available 24/7 to assist you with any needs that may arise. By interacting with our compassionate staff, you will gain a sense of the genuine care and support they provide to our residents on a daily basis."
     },
   ];
   return (

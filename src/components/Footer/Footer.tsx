@@ -61,20 +61,7 @@ const Footer: React.FC<FooterProps> = () => {
           <Link href={'#'}>About</Link>
           <Link href={'#'}>Contact</Link>
         </Stack>
-      </Container>
-
-      <Box borderTopWidth={1} borderStyle={'solid'}>
-        <Container
-          as={Stack}
-          maxW={'6xl'}
-          py={4}
-          direction={{ base: 'column', md: 'row' }}
-          spacing={4}
-          justify={{ base: 'center', md: 'space-between' }}
-          align={{ base: 'center', md: 'center' }}
-        >
-          <Text>&copy; 2023 Pledgerville, Inc. All rights reserved</Text>
-          <Stack direction={'row'} spacing={6}>
+        <Stack direction={'row'} spacing={1}>
             <SocialButton label={'Facebook'} href={'#'}>
               <FaFacebookF />
             </SocialButton>
@@ -88,6 +75,19 @@ const Footer: React.FC<FooterProps> = () => {
               <FaInstagram />
             </SocialButton>
           </Stack>
+      </Container>
+
+      <Box borderTopWidth={1} borderStyle={'solid'}>
+        <Container
+          as={Stack}
+          maxW={'6xl'}
+          py={4}
+          direction={{ base: 'column', md: 'row' }}
+          spacing={4}
+          justify={{ base: 'center', md: 'space-between' }}
+          align={{ base: 'center', md: 'center' }}
+        >
+          <Text>Copyright © 2011 Pledgerville Senior Citizen Villa Inc. 11060 Norris Street Pacoima, California 91331 All Rights Reserved.</Text>
         </Container>
       </Box>
     </Box>

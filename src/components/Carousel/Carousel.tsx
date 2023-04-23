@@ -10,7 +10,7 @@ import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
 
 const settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   fade: true,
   infinite: true,
@@ -30,12 +30,14 @@ const Carousel: React.FC = () => {
   ];
   const [slider, setSlider] = React.useState<Slider | null>(null);
   const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
+  const side = useBreakpointValue({ base: '10px', md: '30px' });
+  const imageHeight = useBreakpointValue({ base: '300px', md: '600px' });
+  const imageWidth = useBreakpointValue({ base: '80%', md: '100%' });
   return (
     <Container maxW='container.lg' mt={5}>
       <Box
         position={'relative'}
-        height={'600px'}
+        height={imageHeight}
         width={'full'}
         overflow={'hidden'}
       >
@@ -84,7 +86,7 @@ const Carousel: React.FC = () => {
           {images.map((image, index) => (
             <Box
               key={index}
-              height={'4xl'}
+              height={imageHeight}
               position='relative'
               backgroundPosition='center'
               backgroundRepeat='no-repeat'
@@ -94,8 +96,10 @@ const Carousel: React.FC = () => {
               <Image
                 src={`${image}`}
                 alt=''
-                objectFit='inherit'
-                boxSize='4xl'
+                objectFit='cover'
+                width={imageWidth}
+                height={imageHeight}
+                margin='0 auto'
               />
             </Box>
           ))}
