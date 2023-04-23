@@ -43,21 +43,21 @@ const Services: React.FC = () => {
   const services: ServiceProps[] = [
     {
       imageUrl: '/play-time.jpg',
-      title: 'SERVICES',
+      title: 'SERVICES COORDINATOR',
       description:
-      "The Service Coordinator in the Multifamily Housing program will assist the elderly residents and non-elderly residents with disabilities living at Pledgerville to obtain needed supportive services from the community.  This assistance enables them to continue living as independently as possible in their homes.  The service coordinator is responsible for assuring that elderly residents with disabilities are linked to the supportive services they need to continue living independently in their current homes. The Service Coordinator program at Pledgerville will involve programs that will empower and transform the residents’ lives.  A Resident Council and Neighborhood Network Center will be established to help residents make transformative changes within themselves and encourage social and cultural activities and events."
+      "At Pledgerville's senior citizens housing, the Service Coordinator will aid both elderly and non-elderly residents with disabilities in acquiring necessary community support services. This aid will enable them to maintain as much independence as possible while living in their homes. The Service Coordinator's responsibility includes ensuring that elderly residents with disabilities receive access to the required supportive services to continue their independent living. In addition to this, the Service Coordinator program will initiate empowering programs at Pledgerville to bring about positive changes in the residents' lives. To foster social and cultural activities and events, a Resident Council and Neighborhood Network Center will be established to promote transformative change among residents."
     },
     {
       imageUrl: '/purple_flowers.jpg',
       title: 'INDEPENDENT LIVING',
       description:
-        "The objectives and focus of the Pledgerville Resident Council include helping residents see how they can contribute to their community, bringing people together as often as possible, ensuring that programs represent the diversity of the residents, and encouraging multi-cultural activities and events.",
+      "The Pledgerville Resident Council aims to promote community involvement by encouraging residents to contribute and organizing diverse events that bring people together. They also strive to ensure that programs are inclusive and represent the diversity of the community, while encouraging multi-cultural activities and events. In turn, the Pledgerville Neighborhood Networks Center is committed to providing residents with access to technology and the internet, as well as local services and healthcare options. They offer computer training in a supportive and non-intimidating environment, allowing for shared learning and community involvement. Together, these initiatives work towards creating an inclusive and empowered community where residents feel valued, supported, and engaged."
     },
     {
       imageUrl: '/wheel_chair.jpg',
       title: 'TAKE A VIRTUAL TOUR',
       description:
-        'Experience Your New Home. We invite you to an exclusive Virtual Tour, where you’ll have the opportunity to explore your new home. Our communities come to life from every angle, with thoughtfully designed homes and engaging activities, all ready to enhance your lifestyle. And you can rest easy and move through your day with confidence, knowing that our compassionate caregivers are available any time, day or night. Our weekly housekeeping, laundry, linen services, restaurant, style, dining, social activities, daily fitness classes, and uncompromising life-enhancing amenities, ensure that you will be living your best life, every day!',
+      "Come and explore all that Pledgerville has to offer with an exclusive tour of your new home. From the first shopping center established after the development to a variety of engaging activities, our community comes to life from every angle, enriching your lifestyle. You'll gain insight into the pride that many residents feel when reflecting on the history and visual imagery that our six-story, tri-level building brings. Additionally, during the exclusive tour of your new home, you will have the opportunity to meet our dedicated caregivers, who are available 24/7 to assist you with any needs that may arise. By interacting with our compassionate staff, you will gain a sense of the genuine care and support they provide to our residents on a daily basis."
     },
   ];
   return (

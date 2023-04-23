@@ -36,21 +36,21 @@ const Details: React.FC = () => {
   const details: DetailProps[] = [
     {
       imageUrl: '/black-man-office.jpg',
-      title: 'Life, Style & Substance',
+      title: 'LIFESTYLE & SUBSTANCE',
       description:
-        'Our Hollywood Hills neighborhood offers a robust arts and culture setting with global cuisine, live music, museums, expertly curated shops, and some of the best coffee in the West Coast. We are nestled between Griffith Observatory and the Hollywood Bowl, just moments from: \nHollywood & Highland, Whole Foods, CVS \nAntica Pizzeria da Michele, Shake Shack, Rubies+Diamonds \nSouthern California Hospital at Hollywood, Los Angeles Medical Center, UCLA Health',
+        'Our Pacoima community provides the ideal balance of privacy and community interaction, allowing residents to maintain their independence while having access to engaging activities and social events. The facility also offers various amenities and residents have the freedom to choose from a variety of villa sizes and layouts equipped with appliances and conveniences, allowing them to live comfortably and elegantly.'
     },
     {
       imageUrl: '/hand-shake.jpg',
       title: 'OUR COMMITMENT',
       description:
-        'At Hollywood Hills Senior Living, we dedicate every day to supporting our residents to live the full, active, independent lifestyle they deserve. We know that with a little of the right kind of individualized assistance, our residents can continue to enjoy the activities that are meaningful to them. Personalized care plans, an attentive 24-hour care team, and stand-out amenities make Hollywood Hills Senior Living the premier choice for senior living in Hollywood Hills, California.',
+        'Our mission at Pledgerville is to foster a sense of purpose and independence in our residents lives. We understand that we are not just a community, but also a part of the larger society. As such, we are committed to making a positive impact in the local community by creating employment opportunities for the locals and supporting small businesses. We believe that by investing in the community, we can foster a sense of purpose and belonging that enhances the quality of life for everyone.'
     },
     {
-      imageUrl: '/dinner-time.jpg',
-      title: 'HEALTHFUL & SATISFYING',
+      imageUrl: '/branch-dof.jpg',
+      title: 'PEACEFUL & SATISFYING',
       description:
-        'You can count on our professional culinary team to prepare each meal to your unique specifications. <p>Our in-house culinary team prepares fresh, delicious meals made to your specifications, so you can trust that each bite will be as palate pleasing as it is nutritious.\nWe can accommodate allergies, sensitivities, and dietary needs, but above all, we make sure that the food we serve tastes great to you. Everyone has different preferences, and we are happy to honor yours.',
+        'Our independent living facility is the epitome of tranquility and contentment. We pride ourselves on creating an environment that promotes peacefulness and fulfillment, where our residents can lead a life of serenity and harmony. Our serene surroundings provide the perfect atmosphere for reflection and contemplation, with ample opportunities to connect with nature and enjoy the great outdoors.',
     },
   ];
   return (
