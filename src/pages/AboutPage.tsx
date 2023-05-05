@@ -18,7 +18,7 @@ import {
       <Box h="100vh" overflowY="scroll">
         <Box pos="relative" w="100%" h="70vh">
           <Image
-            src="/green-monarch-dof.jpg"
+            src="/brick_dof.jpg"
             alt="description-of-your-image"
             h="100%"
             w="100%"
@@ -45,7 +45,7 @@ import {
           overflow="scroll"
           maxHeight="60vh"
         >
-          <Heading as="h2" size="xl" mb="5">
+          <Heading as="h2" size="xl" mb="5" textAlign="center">
             About Us
           </Heading>
           <Text fontSize="xl" textAlign="center" mb="5" fontWeight="semibold">
