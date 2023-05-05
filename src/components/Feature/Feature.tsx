@@ -10,8 +10,8 @@ import React from 'react';
 
 const Feature: React.FC = () => {
   return (
-    <Container maxW='8xl' paddingLeft={530} paddingBottom={2} paddingTop={50} >
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={28}>
+    <Container maxW='8xl' paddingLeft={530} paddingBottom={2} paddingTop={60} >
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={50}>
         <Flex direction='row' gap={4}>
           <Flex direction='column' w='full' h='full' alignItems='stretch' flexGrow={1} gap={3}>
             <Image src='/black-man-cooking.jpg' alt='Black man cooking' rounded='md' objectFit='cover' width='600px' height='390px' paddingTop={110} />

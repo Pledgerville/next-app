@@ -46,7 +46,11 @@ const Navbar: React.FC<NavbarProps> = () => {
         >
           <NavItem to='/'>Home</NavItem>
           <NavItem to='/services'>Services</NavItem>
-          <NavItem to='/about-us'>About Us</NavItem>
+          <NavItem to='/AboutPage'>
+            <Text>
+                <Link href="/AboutPage">About us</Link>
+            </Text>
+          </NavItem>
           <NavItem to='/contact-us'>Contact Us</NavItem>
         </Flex>
       </Box>
