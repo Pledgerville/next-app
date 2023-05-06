@@ -20,7 +20,7 @@ import {
           <Image
             src="/brick_dof.jpg"
             alt="description-of-your-image"
-            h="100%"
+            h="70%"
             w="100%"
             objectFit="cover"
           />
@@ -29,31 +29,27 @@ import {
             top="0"
             left="0"
             w="100%"
-            h="100%"
-            bg="rgba(0, 0, 0, 0.4)"
+            h="0%"
+            bg="rgba(0, 0, 0, 0.0)"
           />
         </Box>
         <Box
-          maxW="container.xl"
+          maxW="container.lg"
           mx="auto"
-          px={4}
+          px={17}
           py={8}
           bg="white"
           boxShadow="md"
           borderRadius="md"
-          my={8}
-          overflow="scroll"
-          maxHeight="60vh"
+          my={-24}
+          // overflow="scroll"
+          maxHeight="100vh"
         >
-          <Heading as="h2" size="xl" mb="5" textAlign="center">
+          <Heading as="h2" size="2xl" mb="5" textAlign="center">
             About Us
           </Heading>
           <Text fontSize="l" textAlign="center" mb="5" fontWeight="semibold">
-            In May 1972, while reflecting on the welfare of the community and Pacoima, Rev. T.G. Pledger wrote a note to the Lord. Five years later, the note resurfaced, prompting Rev. Pledger to take action. 
-          </Text>
-          <Text fontSize="l" textAlign="center" mb="5" fontWeight="semibold">
-           In 1977, nine members of the Greater Community Baptist Church in Pacoima gathered to discuss a note left by Rev. T. G. Pledger that expressed concern for the welfare of the community's seniors and handicapped. The group formed a Planning Committee led by Mrs. Earlene Stepney and Mrs. Eula C. Rose to pursue building a facility to meet these needs. After seeking information from the Department of Housing and Urban Development (HUD) in Washington, D.C., the committee was introduced to a Planning, Architect, Engineering Management, and Consulting Firm by Mr. Ken Thomas. The firm submitted a proposal for a senior citizens housing project, but it was not approved by HUD. With legal guidance from Bryce D. Wisner, Esq., the Planning Committee reported its findings to the Executive Board of Greater Community Baptist Church in July 1978. As a result, a Board of Directors was established, and the chartered name PLEDGERVILLE SENIOR CITIZENS VILLA, INC. was chosen.          </Text>
-          <Text fontSize="l" textAlign="center" mb="5" fontWeight="semibold">
+            In May 1972, while reflecting on the welfare of the community and Pacoima, Rev. T.G. Pledger wrote a note to the Lord. Five years later, the note resurfaced, prompting Rev. Pledger to take action.             In 1977, nine members of the Greater Community Baptist Church in Pacoima gathered to discuss a note left by Rev. T. G. Pledger that expressed concern for the welfare of the community's seniors and handicapped. The group formed a Planning Committee led by Mrs. Earlene Stepney and Mrs. Eula C. Rose to pursue building a facility to meet these needs. After seeking information from the Department of Housing and Urban Development (HUD) in Washington, D.C., the committee was introduced to a Planning, Architect, Engineering Management, and Consulting Firm by Mr. Ken Thomas. The firm submitted a proposal for a senior citizens housing project, but it was not approved by HUD. With legal guidance from Bryce D. Wisner, Esq., the Planning Committee reported its findings to the Executive Board of Greater Community Baptist Church in July 1978. As a result, a Board of Directors was established, and the chartered name PLEDGERVILLE SENIOR CITIZENS VILLA, INC. was chosen. 
           </Text>
           <Text fontSize="l" textAlign="center" mb="5" fontWeight="semibold">
            The corporation secured the services of Barker Management Inc., Mr. Byron Barker, President, and Edward C.Barker and Associates, Architects, and with the guidance of the Consultant, new proposals were submitted to HUD requiring many changes before the project was finally funded in September 1980 in the amount of $3.99 million. The Barkers drafted another proposal for the project, which they resubmitted to HUD, and it was approved at a total cost of $6,051,700.00. Groundbreaking ceremonies were held on February 19, 1983, and construction began a week later. Occupancy occurred in March 1984, and the facility currently boasts a 90% occupancy rate. 

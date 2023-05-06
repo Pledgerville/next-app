@@ -8,8 +8,11 @@ import {
   Image,
   Container,
   Box,
+
 } from '@chakra-ui/react';
-import React from 'react';
+import  React from 'react';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 type ServiceProps = {
   imageUrl: string;
