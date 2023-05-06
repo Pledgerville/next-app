@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           <NavItem to='/services'>Services</NavItem>
           <NavItem to='/AboutPage'>
             <Text>
-                <Link href="/AboutPage">About us</Link>
+                <Link href="/AboutPage">About Us</Link>
             </Text>
           </NavItem>
           <NavItem to='/contact-us'>Contact Us</NavItem>
