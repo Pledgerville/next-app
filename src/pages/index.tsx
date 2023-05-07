@@ -26,7 +26,7 @@ export default function Home() {
         <Details />
         <Separator text=''/>
         <Services />
-        <Separator text=""/>
+        <Separator text=''/>
         <Contact />
       </main>
     </>
