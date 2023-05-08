@@ -58,23 +58,23 @@ const Footer: React.FC<FooterProps> = () => {
         <Stack direction={'row'} spacing={6}>
           <Link href={'#'}>Home</Link>
           <Link href={'#'}>Services</Link>
-          <Link href={'/AboutPage'}>About Us</Link>
+          <Link href={'/about-us'}>About Us</Link>
           <Link href={'#'}>Contact</Link>
         </Stack>
         <Stack direction={'row'} spacing={1}>
-            <SocialButton label={'Facebook'} href={'#'}>
-              <FaFacebookF />
-            </SocialButton>
-            <SocialButton label={'Twitter'} href={'#'}>
-              <FaTwitter />
-            </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
-              <FaInstagram />
-            </SocialButton>
-          </Stack>
+          <SocialButton label={'Facebook'} href={'#'}>
+            <FaFacebookF />
+          </SocialButton>
+          <SocialButton label={'Twitter'} href={'#'}>
+            <FaTwitter />
+          </SocialButton>
+          <SocialButton label={'YouTube'} href={'#'}>
+            <FaYoutube />
+          </SocialButton>
+          <SocialButton label={'Instagram'} href={'#'}>
+            <FaInstagram />
+          </SocialButton>
+        </Stack>
       </Container>
 
       <Box borderTopWidth={1} borderStyle={'solid'}>
@@ -87,7 +87,10 @@ const Footer: React.FC<FooterProps> = () => {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>Copyright © 2011 Pledgerville Senior Citizen Villa Inc. 11060 Norris Street Pacoima, California 91331 All Rights Reserved.</Text>
+          <Text>
+            Copyright © 2011 Pledgerville Senior Citizen Villa Inc. 11060 Norris
+            Street Pacoima, California 91331 All Rights Reserved.
+          </Text>
         </Container>
       </Box>
     </Box>
