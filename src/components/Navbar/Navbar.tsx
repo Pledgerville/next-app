@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     >
       <Box>
         <Text fontSize='lg' fontWeight='bold'>
-          Pledgerville
+          <NavItem to='/'>Pledgerville</NavItem>
         </Text>
       </Box>
       <Box flexBasis={{ base: '100%', md: 'auto' }}>
@@ -46,11 +46,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         >
           <NavItem to='/'>Home</NavItem>
           <NavItem to='/services'>Services</NavItem>
-          <NavItem to='/AboutPage'>
-            <Text>
-                <Link href="/AboutPage">About Us</Link>
-            </Text>
-          </NavItem>
+          <NavItem to='/about-us'>About Us</NavItem>
           <NavItem to='/contact-us'>Contact Us</NavItem>
         </Flex>
       </Box>

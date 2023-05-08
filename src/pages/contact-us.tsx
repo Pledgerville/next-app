@@ -17,7 +17,7 @@ import ContactForm from '@src/components/forms/Contact-Form';
 
 type ContactUsProps = {};
 
-const Contact: React.FC<ContactUsProps> = () => {
+const ContactPage: React.FC<ContactUsProps> = () => {
   return (
     <Container maxW='5xl' mt={2} mb={2} centerContent overflow={'hidden'}>
       <Card w='5xl'>
@@ -141,4 +141,4 @@ const Contact: React.FC<ContactUsProps> = () => {
     </Container>
   );
 };
-export default Contact;
+export default ContactPage;
