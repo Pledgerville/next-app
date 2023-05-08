@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     >
       <Box>
         <Text fontSize='lg' fontWeight='bold'>
-          <NavItem to='/'>Pledgerville</NavItem>
+          <Link href='/'>Pledgerville</Link>
         </Text>
       </Box>
       <Box flexBasis={{ base: '100%', md: 'auto' }}>

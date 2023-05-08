@@ -14,8 +14,6 @@ import React from 'react';
 type AboutUsProps = {};
 
 const AboutPage: React.FC<AboutUsProps> = () => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-
   return (
     <Box h='100vh' overflowY='scroll'>
       <Flex flexWrap='wrap' alignItems='center' justifyContent='center'>
@@ -54,18 +52,18 @@ const AboutPage: React.FC<AboutUsProps> = () => {
             </Heading>
             <Text fontSize='xl' mb='5' lineHeight={1.8}>
               In May 1972, Rev. T.G. Pledger wrote a note that expressed concern
-              for the welfare of the community's seniors and handicapped. In
-              1977, the note inspired nine members of the Greater Community
+              for the welfare of the community&rsquo;s seniors and handicapped.
+              In 1977, the note inspired nine members of the Greater Community
               Baptist Church to form a Planning Committee to pursue building a
               facility to meet the needs of these individuals. The committee was
               introduced to a Planning, Architect, Engineering Management, and
               Consulting Firm by Mr. Ken Thomas. The firm submitted a proposal
-              for a senior citizens' housing project, but it was not approved by
-              HUD. With legal guidance from Bryce D. Wisner, Esq., the Planning
-              Committee reported its findings to the Executive Board of Greater
-              Community Baptist Church in July 1978. As a result, a Board of
-              Directors was established, and the chartered name PLEDGERVILLE
-              SENIOR CITIZENS VILLA, INC. was chosen.
+              for a senior citizens&rsquo; housing project, but it was not
+              approved by HUD. With legal guidance from Bryce D. Wisner, Esq.,
+              the Planning Committee reported its findings to the Executive
+              Board of Greater Community Baptist Church in July 1978. As a
+              result, a Board of Directors was established, and the chartered
+              name PLEDGERVILLE SENIOR CITIZENS VILLA, INC. was chosen.
             </Text>
             <Text fontSize='xl' mb='5' lineHeight={1.8}>
               The corporation hired Barker Management, Edward C. Barker and
