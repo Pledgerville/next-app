@@ -20,12 +20,14 @@ const Detail: React.FC<DetailProps> = ({ imageUrl, title, description }) => {
   return (
     <SimpleGrid m={4} columns={{ base: 1, md: 2 }} spacing={10}>
       <Flex flexGrow={1}>
-        <Image src={imageUrl} alt={title} borderRadius='lg' />
+        <Box bg="white" borderRadius='lg' p={4}>
+          <Image src={imageUrl} alt={title} />
+        </Box>
       </Flex>
       <Flex>
-        <Stack mt='6' spacing='3'>
-          <Heading size='md'>{title}</Heading>
-          <Text>{description}</Text>
+        <Stack mt='1' spacing='2'>
+          <Heading fontFamily="Linotype Didot" fontSize="2xl"  size='md'>{title}</Heading>
+          <Text fontFamily="Linotype Didot" fontSize="xl">{description}</Text>
         </Stack>
       </Flex>
     </SimpleGrid>
@@ -35,7 +37,7 @@ const Detail: React.FC<DetailProps> = ({ imageUrl, title, description }) => {
 const Details: React.FC = () => {
   const details: DetailProps[] = [
     {
-      imageUrl: '/black-man-office.jpg',
+      imageUrl: '/computers_use.jpg',
       title: 'LIFESTYLE & SUBSTANCE',
       description:
         'Our Pacoima community provides the ideal balance of privacy and community interaction, allowing residents to maintain their independence while having access to engaging activities and social events. The facility also offers various amenities and residents have the freedom to choose from a variety of villa sizes and layouts equipped with appliances and conveniences, allowing them to live comfortably and elegantly.'

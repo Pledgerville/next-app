@@ -3,6 +3,7 @@ import {
   Box,
   IconButton,
   useBreakpointValue,
+
   Image,
 } from '@chakra-ui/react';
 import React from 'react';
@@ -24,10 +25,9 @@ const settings = {
 const Carousel: React.FC = () => {
   const images: string[] = [
     'coffee-time.jpg',
-    'black-man-red.jpg',
-    'play-time.jpg',
+    'black-man-office.jpg',
+    'dinner-time.jpg',
     'good-time.jpg',
-
   ];
   const [slider, setSlider] = React.useState<Slider | null>(null);
   const top = useBreakpointValue({ base: '90%', md: '50%' });

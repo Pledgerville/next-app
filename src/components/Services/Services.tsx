@@ -33,8 +33,8 @@ const Service: React.FC<ServiceProps> = ({ imageUrl, title, description }) => {
             height='200px'
           />
           <Stack mt='6' spacing='3'>
-            <Heading size='md'>{title}</Heading>
-            <Text>{description}</Text>
+            <Heading  fontFamily="Linotype Didot" fontSize="xl" size='md'>{title}</Heading>
+            <Text fontFamily="Linotype Didot" fontSize="xl"> {description}</Text>
           </Stack>
         </CardBody>
       </Card>
