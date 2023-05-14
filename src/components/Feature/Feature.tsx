@@ -47,9 +47,9 @@ const Feature: React.FC = () => {
                   support and enjoy all the advantages of a vibrant lifestyle. As a resident of <br/>
                   our independent living community, you can look forward to taking part in<br/> 
                   exciting community events including group exercises, game and movie night<br/> 
-                  or morning coffee in our Great Room.  Whether you desire to forge new relationships,
-                  explore new hobbies, or simply unwind and de-stress, our senior community is the 
-                  perfect haven for you or your loved one.
+                  or morning coffee in our Great Room.  Whether you desire to forge new <br/>
+                  relationships, explore new hobbies, or simply unwind and de-stress, our senior<br/> 
+                  community is the perfect haven for you or your loved one.
                 </Text>
               </motion.div>
               <motion.div variants={itemVariants}>

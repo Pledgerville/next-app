@@ -28,6 +28,8 @@
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
     "react-slick": "^0.29.0",
+    "react-spring": "^9.7.1",
+    "react-use": "^17.4.0",
     "taxi.js": "^0.3.5",
     "typescript": "4.9.5"
   }
