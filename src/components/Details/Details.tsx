@@ -40,7 +40,7 @@ const Detail: React.FC<DetailProps> = ({ imageUrl, title, description }) => {
           style={{ overflow: 'hidden' }}
         >
           <animated.div style={animationProps}>
-            <Image src={imageUrl} alt={title} />
+          <Image src={imageUrl} alt={title} width="430px" height="320px" />
           </animated.div>
         </Box>
       </Flex>
