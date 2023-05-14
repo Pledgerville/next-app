@@ -46,10 +46,10 @@ const Hero: React.FC<HeroProps> = () => {
         textAlign="center"
         zIndex="1"
       >
-        <Heading as="h2" size="xl" mb="5">
+        <Heading fontFamily="Linotype Didot" fontSize="4xl" as="h2" size="xl" mb="5">
         Senior Living: 39 Years of Exceeding Expectations and Community Excellence      
         </Heading>
-        <Text fontSize="2xl" textAlign = "center" mb="5" fontWeight="semibold" w="155%">
+        <Text fontFamily="Linotype Didot" fontSize="2xl" textAlign = "center" mb="5" fontWeight="semibold" w="155%">
         Pledgervile Senior Citizen Villa is a cherished landmark in the Northeast San Fernando Valley. The 
         housing estate, which was built on top of the esteemed Pacoima soil, has become an emblem of community 
         pride for its residents. It is noteworthy for being the first housing project designed for seniors and 

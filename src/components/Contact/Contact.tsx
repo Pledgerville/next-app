@@ -25,7 +25,6 @@ const Contact: React.FC<ContactUsProps> = () => {
           <SimpleGrid
             p={2}
             w='full'
-            flex
             columns={2}
             gap={2}
             overflow={'hidden'}
