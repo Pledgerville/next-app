@@ -5,6 +5,7 @@ import {
   Stack,
   VisuallyHidden,
   Text,
+  Center,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
@@ -51,8 +52,11 @@ const Footer: React.FC<FooterProps> = () => {
         spacing={4}
         justify={'center'}
         align={'center'}
+        fontFamily="Linotype Didot"
+        fontSize='xl'
+
       >
-        <Text fontSize='x-large' fontWeight='bold'>
+        <Text fontSize='3xl' fontWeight='bold'>
           Pledgerville, Inc.
         </Text>
         <Stack direction={'row'} spacing={6}>
