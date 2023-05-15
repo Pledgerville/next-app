@@ -41,7 +41,7 @@ const Carousel: React.FC = () => {
         height={imageHeight}
         width={'full'}
         overflow={'hidden'}
-        boxShadow="dark-lg"
+        boxShadow="2xl"
         borderRadius="2xl"
       >
         {/* CSS files for react-slick */}
