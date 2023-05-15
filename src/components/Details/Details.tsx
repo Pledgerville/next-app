@@ -33,7 +33,6 @@ const Detail: React.FC<DetailProps> = ({ imageUrl, title, description }) => {
       m={6}
       columns={{ base: 1, md: 2 }}
       spacing={11}
-      backgroundColor={'white'}
       borderRadius='xl'
     >
       <Flex flexGrow={1}>
@@ -51,8 +50,8 @@ const Detail: React.FC<DetailProps> = ({ imageUrl, title, description }) => {
           </animated.div>
         </Box>
       </Flex>
-      <Flex>
-        <Stack mt='1' spacing='2' mr='1'>
+      <Flex backgroundColor={'white'} borderRadius='xl'>
+        <Stack margin='2' spacing='2'>
           <animated.div style={animationProps}>
             <Heading fontFamily='Linotype Didot' fontSize='2xl' size='md'>
               {title}
