@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           pt={[4, 4, 0, 0]}
         >
           <NavItem to='/'>Home</NavItem>
-          <NavItem to='/services'>Services</NavItem>
+          <NavItem to='/services' >Services</NavItem>
           <NavItem to='/about-us'>About Us</NavItem>
           <NavItem to='/contact-us'>Contact Us</NavItem>
         </Flex>
