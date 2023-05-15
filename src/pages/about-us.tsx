@@ -1,6 +1,7 @@
 import { MotionBox } from '../components/MotionElements/MotionElements';
 import {
   Box,
+  Center,
   Flex,
   Heading,
   Image,
@@ -21,8 +22,7 @@ const AboutPage: React.FC<AboutUsProps> = () => {
           w={{ base: '100%', md: '50%' }}
           h='100vh'
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          animate={{ opacity: 1, transition: { duration: 0.8 }}}
         >
           <Image
             src='/brick_dof.jpg'
@@ -39,18 +39,17 @@ const AboutPage: React.FC<AboutUsProps> = () => {
           alignItems='center'
           justifyContent='center'
           initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
         >
           <Box
             maxW={{ base: '100%', md: '70%' }}
             mx='auto'
             textAlign={{ base: 'center', md: 'left' }}
           >
-            <Heading as='h2' size='3xl' mb='8' mt={{ base: 0, md: 10 }}>
+            <Heading fontFamily="Linotype Didot" as='h2' size='2xl' mb='8' mt={{ base: 0, md: 10 }}>
               About Us
             </Heading>
-            <Text fontSize='xl' mb='5' lineHeight={1.8}>
+            <Text fontFamily="Linotype Didot" fontSize='lg' mb='1' lineHeight={1.8}>
               In May 1972, Rev. T.G. Pledger wrote a note that expressed concern
               for the welfare of the community&rsquo;s seniors and handicapped.
               In 1977, the note inspired nine members of the Greater Community
@@ -65,7 +64,7 @@ const AboutPage: React.FC<AboutUsProps> = () => {
               result, a Board of Directors was established, and the chartered
               name PLEDGERVILLE SENIOR CITIZENS VILLA, INC. was chosen.
             </Text>
-            <Text fontSize='xl' mb='5' lineHeight={1.8}>
+            <Text fontFamily="Linotype Didot" fontSize='lg' mb='1' lineHeight={1.8}>
               The corporation hired Barker Management, Edward C. Barker and
               Associates, and a consultant. After several proposals and changes,
               the project was funded in 1980 for $3.99 million. The Barkers

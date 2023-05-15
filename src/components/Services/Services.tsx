@@ -37,7 +37,8 @@ const Service: React.FC<ServiceProps> = ({ imageUrl, title, description }) => {
           <Image
             src={imageUrl}
             alt={title}
-            borderRadius='lg'
+            borderRadius='xl'
+            boxShadow="dark-lg"
             minWidth='300px'
             height='200px'
           />

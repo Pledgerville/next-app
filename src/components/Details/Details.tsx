@@ -28,14 +28,15 @@ const Detail: React.FC<DetailProps> = ({ imageUrl, title, description }) => {
     opacity: inView ? 1 : 0,
     transform: inView ? 'translateY(0)' : 'translateY(50px)',
   });
-
   return (
-    <SimpleGrid m={4} columns={{ base: 1, md: 2 }} spacing={10}>
+    <SimpleGrid m={6} columns={{ base: 1, md: 2 }} spacing={11}>
       <Flex flexGrow={1}>
         <Box
           bg="white"
-          borderRadius="lg"
-          p={4}
+          borderRadius="2xl"
+          border="solid white"
+          boxShadow="dark-lg"
+          p={0}
           ref={ref}
           style={{ overflow: 'hidden' }}
         >

@@ -17,17 +17,17 @@ const Feature: React.FC = () => {
 
   return (
     <motion.div ref={ref} variants={containerVariants} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
-      <Container maxW="8xl" paddingLeft={200} paddingBottom={2} paddingTop={40}>
+      <Container maxW="8xl" paddingLeft={200} paddingBottom={20} paddingTop={40}>
         <SimpleGrid columns={{ base: 1, md: 1 }} spacing={50}>
           <Flex direction="row" gap={5}>
             <Flex direction="column" w="full" h="full" alignItems="stretch" flexGrow={1} gap={3}>
               <motion.div variants={itemVariants}>
-              <Box bg="white" boxShadow="lg" border="20px solid white" borderRadius="md" overflow="hidden"  >
+              <Box bg="white" boxShadow="dark-lg" border="solid white"  borderRadius="2xl" overflow="hidden"  >
                   <Image src="/black-man-cooking.jpg" alt="Black man cooking" objectFit="cover" width="600px" height="400px" />
                 </Box>
               </motion.div>
               <motion.div variants={itemVariants}>
-              <Box bg="white" boxShadow="lg" border="20px solid white" borderRadius="md" overflow="hidden">
+              <Box bg="white" boxShadow="dark-lg"  border="solid white" borderRadius="2xl" overflow="hidden">
                   <Image src="/computers.jpg" alt="Black man cooking" objectFit="cover" width="600px" height="400px"  />
                 </Box>
               </motion.div>
@@ -39,7 +39,7 @@ const Feature: React.FC = () => {
                 </Heading>
               </motion.div>
               <motion.div variants={itemVariants}>
-                <Heading  fontSize="5xl" fontFamily="Linotype Didot" noOfLines={1} paddingLeft={140} paddingBottom={33} >Home Is Here</Heading>
+                <Heading  fontSize="5xl" fontFamily="Linotype Didot" noOfLines={1} paddingLeft={140} paddingBottom={34} >Home Is Here</Heading>
               </motion.div>
               <motion.div variants={itemVariants}>
                 <Text  fontFamily="Linotype Didot" fontSize="xl" style={{ wordWrap: 'break-word'} } paddingTop={1}>
