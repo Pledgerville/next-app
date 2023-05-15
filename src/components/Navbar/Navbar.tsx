@@ -15,6 +15,9 @@ const NavItem: React.FC<NavItemProps> = ({ children, isLast, to = '/' }) => {
       mb={{ base: isLast ? 0 : 8, sm: 0 }}
       mr={{ base: 0, sm: isLast ? 0 : 8 }}
       display='block'
+      fontFamily='Linotype Didot'
+      fontSize='xl'
+      fontWeight='bold'
     >
       <Link href={to}>{children}</Link>
     </Text>
@@ -32,8 +35,8 @@ const Navbar: React.FC<NavbarProps> = () => {
       wrap='wrap'
       as='nav'
     >
-      <Box>
-        <Text fontSize='lg' fontWeight='bold'>
+      <Box fontFamily='Linotype Didot' >
+        <Text fontSize='3xl' fontWeight='bold'>
           <Link href='/'>Pledgerville</Link>
         </Text>
       </Box>
@@ -45,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           pt={[4, 4, 0, 0]}
         >
           <NavItem to='/'>Home</NavItem>
-          <NavItem to='/services' >Services</NavItem>
+          <NavItem to='/services'>Services</NavItem>
           <NavItem to='/about-us'>About Us</NavItem>
           <NavItem to='/contact-us'>Contact Us</NavItem>
         </Flex>
