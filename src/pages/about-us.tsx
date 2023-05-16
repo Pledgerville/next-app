@@ -16,7 +16,7 @@ type AboutUsProps = {};
 
 const AboutPage: React.FC<AboutUsProps> = () => {
   return (
-    <Box h='100vh' overflowY='scroll'>
+    <Box h='100vh' >
       <Flex flexWrap='wrap' alignItems='center' justifyContent='center'>
         <MotionBox
           w={{ base: '100%', md: '50%' }}
@@ -34,32 +34,34 @@ const AboutPage: React.FC<AboutUsProps> = () => {
         </MotionBox>
         <MotionBox
           w={{ base: '100%', md: '50%' }}
-          h='70vh'
+          h='100vh'
           display='flex'
           alignItems='center'
           justifyContent='center'
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+          overflowY='scroll'
         >
           <Box
             maxW={{ base: '100%', md: '70%' }}
             mx='auto'
             textAlign={{ base: 'center', md: 'left' }}
+            overflowY='scroll'
           >
             <Heading
               fontFamily='Linotype Didot'
               as='h2'
               size='2xl'
-              mb='8'
-              mt={{ base: 0, md: 10 }}
+              mb='3'
+              mt={{ base: 1, md: 10 }}
             >
               About Us
             </Heading>
             <Text
               fontFamily='Linotype Didot'
               fontSize='xl'
-              mb='1'
-              lineHeight={1.8}
+              mb='2'
+              lineHeight={1.5}
             >
               In May 1972, Rev. T.G. Pledger wrote a note that expressed concern
               for the welfare of the community&rsquo;s seniors and handicapped.
