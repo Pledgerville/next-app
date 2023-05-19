@@ -1,10 +1,19 @@
-import { Box, Flex, Text, Menu, MenuButton, MenuList, Button,  MenuItem, Icon, Textarea } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Text,
+  Menu,
+  MenuButton,
+  MenuList,
+  Button,
+  MenuItem,
+  Icon,
+  Textarea,
+} from '@chakra-ui/react';
 import Link from 'next/link';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
-
 
 type NavbarProps = {};
 type NavItemProps = {
@@ -63,11 +72,11 @@ const Navbar: React.FC<NavbarProps> = () => {
               fontSize='xl'
               fontWeight='bold'
               rightIcon={<ChevronDownIcon />}
-
+              backgroundColor='white'
             >
               More
             </MenuButton>
-          <MenuList fontFamily='Linotype Didot'>
+            <MenuList fontFamily='Linotype Didot'>
               <MenuItem>
                 <Link href='/monarch'>Monarch Society</Link>
               </MenuItem>
@@ -75,12 +84,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <Link href='/contact-us'>Calendar</Link>
               </MenuItem>
               <MenuItem>
-              <Link href='/contact-us'>Events</Link>
+                <Link href='/contact-us'>Events</Link>
               </MenuItem>
               <MenuItem>
                 <Link href='/contact-us'>News</Link>
               </MenuItem>
-           </MenuList>
+            </MenuList>
           </Menu>
         </Flex>
       </Box>
