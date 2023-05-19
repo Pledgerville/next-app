@@ -29,7 +29,7 @@ const Feature: React.FC = () => {
               <motion.div variants={itemVariants}>
               <Box bg="white" boxShadow="xl"  border="solid white" borderRadius="2xl" overflow="hidden">
                   <Image src="/computers.jpg" alt="Black man cooking" objectFit="cover" width="600px" height="400px"  />
-                </Box>
+              </Box>
               </motion.div>
             </Flex>
             <Flex direction="column" gap={-30} maxH="390px">

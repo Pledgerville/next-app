@@ -1,6 +1,10 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text, Menu, MenuButton, MenuList, Button,  MenuItem, Icon, Textarea } from '@chakra-ui/react';
 import Link from 'next/link';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
 
 type NavbarProps = {};
 type NavItemProps = {
@@ -35,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = () => {
       wrap='wrap'
       as='nav'
     >
-      <Box fontFamily='Linotype Didot' >
+      <Box fontFamily='Linotype Didot'>
         <Text fontSize='3xl' fontWeight='bold'>
           <Link href='/'>Pledgerville</Link>
         </Text>
@@ -50,10 +54,38 @@ const Navbar: React.FC<NavbarProps> = () => {
           <NavItem to='/'>Home</NavItem>
           <NavItem to='/services'>Services</NavItem>
           <NavItem to='/about-us'>About Us</NavItem>
-          <NavItem to='/contact-us'>Contact Us</NavItem>
+          <Menu>
+            <MenuButton
+              as={Button}
+              alignItems='center'
+              cursor='pointer'
+              fontFamily='Linotype Didot'
+              fontSize='xl'
+              fontWeight='bold'
+              rightIcon={<ChevronDownIcon />}
+
+            >
+              More
+            </MenuButton>
+          <MenuList fontFamily='Linotype Didot'>
+              <MenuItem>
+                <Link href='/monarch'>Monarch Society</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link href='/contact-us'>Calendar</Link>
+              </MenuItem>
+              <MenuItem>
+              <Link href='/contact-us'>Events</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link href='/contact-us'>News</Link>
+              </MenuItem>
+           </MenuList>
+          </Menu>
         </Flex>
       </Box>
     </Flex>
   );
 };
+
 export default Navbar;

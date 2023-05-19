@@ -9,28 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.4.9",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@fontsource/open-sans": "^4.5.14",
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@next/font": "13.1.6",
+    "@react-google-maps/api": "^2.18.1",
     "@types/node": "18.11.19",
-    "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "@types/react-slick": "^0.23.10",
     "@unseenco/taxi": "^1.2.2",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
-    "framer-motion": "^9.0.1",
+    "framer-motion": "^9.1.7",
+    "leaflet": "^1.9.3",
     "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "ol": "^7.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
+    "react-leaflet": "^4.2.1",
     "react-slick": "^0.29.0",
     "react-spring": "^9.7.1",
     "react-use": "^17.4.0",
     "taxi.js": "^0.3.5",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.3",
+    "@types/react": "^16.14.41"
   }
 }
