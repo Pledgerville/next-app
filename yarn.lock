@@ -1239,6 +1239,13 @@
   dependencies:
     "@chakra-ui/shared-utils" "2.0.5"
 
+"@chakra-ui/icons@^2.0.19":
+  "integrity" "sha512-0A6U1ZBZhLIxh3QgdjuvIEhAZi3B9v8g6Qvlfa3mu6vSnXQn2CHBZXmJwxpXxO40NK/2gj/gKXrLeUaFR6H/Qw=="
+  "resolved" "https://registry.npmjs.org/@chakra-ui/icons/-/icons-2.0.19.tgz"
+  "version" "2.0.19"
+  dependencies:
+    "@chakra-ui/icon" "3.0.16"
+
 "@chakra-ui/image@2.0.15":
   "integrity" "sha512-w2rElXtI3FHXuGpMCsSklus+pO1Pl2LWDwsCGdpBQUvGFbnHfl7MftQgTlaGHeD5OS95Pxva39hKrA2VklKHiQ=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/image/-/image-2.0.15.tgz"
@@ -1967,6 +1974,11 @@
   "integrity" "sha512-mBXIIETBlW8q/ocuUN0hyGow2iuf75hQEHQt8R/RJ/HcphVbLg8KB7pHYGbFGDqs75W+SWvTC7JkVeAjT65BuQ=="
   "resolved" "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-4.5.14.tgz"
   "version" "4.5.14"
+
+"@fortawesome/fontawesome-free@^6.4.0":
+  "integrity" "sha512-0NyytTlPJwB/BF5LtRV8rrABDbe3TdTXqNB3PdZ+UUUZAEIrdOJdmABqKjt4AXwIoJNaRVVZEXxpNrqvE1GAYQ=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-6.4.0.tgz"
+  "version" "6.4.0"
 
 "@googlemaps/js-api-loader@1.15.1":
   "integrity" "sha512-AsnEgNsB7S/VdrHGEQUaUM2e5tmjFGKBAfzR/AqO8O7TPq/jQGvoRw5liPBw4EMF38RDsHmKDV89q/X+qiUREQ=="
