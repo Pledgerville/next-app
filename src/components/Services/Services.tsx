@@ -72,7 +72,7 @@ const Services: React.FC = () => {
     },
     {
       imageUrl: '/wheel_chair.jpg',
-      title: 'TAKE A VIRTUAL TOUR',
+      title: 'TAKE A TOUR',
       description:"Come and explore all that Pledgerville has to offer with an exclusive tour of your new home. From the first shopping center established after the development to a variety of engaging activities, our community comes to life from every angle, enriching your lifestyle. You'll gain insight into the pride that many residents feel when reflecting on the history and visual imagery that our six-story, tri-level building brings. Additionally, during the exclusive tour of your new home, you will have the opportunity to meet our dedicated caregivers, who are available 24/7 to assist you with any needs that may arise. By interacting with our compassionate staff, you will gain a sense of the genuine care and support they provide to our residents on a daily basis.",
 
     },

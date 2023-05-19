@@ -32,7 +32,9 @@ export default function Home() {
         <Separator text='Contact' />
         <Contact />
         <Separator text='' />
-        <MapComponent />     
+        <MapComponent />    
+        <Separator text='' />
+        
       </main>
 
     </>
