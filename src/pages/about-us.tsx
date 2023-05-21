@@ -43,7 +43,7 @@ const AboutPage: React.FC<AboutUsProps> = () => {
           overflowY='scroll'
         >
           <Box
-            maxW={{ base: '100%', md: '70%' }}
+            maxW={{ base: '100%', md: '80%' }}
             mx='auto'
             textAlign={{ base: 'center', md: 'left' }}
             overflowY='scroll'

@@ -23,6 +23,7 @@ type ServiceProps = {
 const Service: React.FC<ServiceProps> = ({ imageUrl, title, description }) => {
   const { ref, inView } = useInView({
     threshold: 0.2, // only trigger when the element is 20% in view
+    triggerOnce: true
   });
 
   return (
