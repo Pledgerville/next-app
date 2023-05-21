@@ -18,7 +18,7 @@ const events = [
   // Add more events as needed
 ];
 
-moment.locale('en-gb');
+moment.locale('en-us');
 
 const localizer = momentLocalizer(moment);
 
@@ -37,12 +37,12 @@ const CalendarPage = () => {
 
   return (
     <div>
-      <h1>Calendar</h1>
+      <h1 className="calendar-header">Calendar</h1>
       <style jsx global>{`
-        /* Add your custom styles here */
         .rbc-calendar {
           height: 500px;
-          background-color: #f2f2f2;
+          background-color: #F9FAFB;
+          padding: 40px;
         }
 
         .rbc-month-view {
@@ -82,7 +82,14 @@ const CalendarPage = () => {
         }
 
         .rbc-off-range-bg {
-          background-color: #000000;
+          background-color: #f2f2f2;
+        }
+
+        .calendar-header {
+          text-align: center;
+          font-family: 'Linotype Didot', serif;
+          font-weight: bold;
+          font-size: 24px; 
         }
       `}</style>
       <Calendar
