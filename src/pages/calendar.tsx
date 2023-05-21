@@ -1,8 +1,8 @@
 import React from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
-import 'moment/locale/en-gb'; // Import the desired locale
-import 'react-big-calendar/lib/css/react-big-calendar.css'; // Import the CSS file
+import 'moment/locale/en-gb';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 const events = [
   {
@@ -18,43 +18,80 @@ const events = [
   // Add more events as needed
 ];
 
-// Set the locale for moment
 moment.locale('en-gb');
 
 const localizer = momentLocalizer(moment);
 
 const CalendarPage = () => {
+  const eventStyleGetter = () => {
+    const style = {
+      backgroundColor: '#ffa500',
+      color: '#333',
+      borderRadius: '0px',
+      border: 'none',
+    };
+    return {
+      style,
+    };
+  };
+
   return (
     <div>
-      
       <h1>Calendar</h1>
       <style jsx global>{`
         /* Add your custom styles here */
         .rbc-calendar {
+          height: 500px;
           background-color: #f2f2f2;
         }
 
-        .rbc-event-content {
-          color: #333;
+        .rbc-month-view {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          width: 100%;
         }
 
-        .rbc-event {
-          background-color: #ffa500;
+        .rbc-month-row {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
         }
 
-        .rbc-toolbar-label {
-          font-size: 20px;
+        .rbc-day-slot {
+          flex: 1;
+          min-width: 0;
         }
 
-        .rbc-selected {
-          background-color: #ffcc00;
+        .rbc-row-content {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          border-right: 1px solid #ddd;
         }
 
-        .rbc-header {
-          color: #666;
+        .rbc-date-cell {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 80px;
+          border-bottom: 1px solid #ddd;
+        }
+
+        .rbc-off-range-bg {
+          background-color: #000000;
         }
       `}</style>
-      <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" />
+      <Calendar
+        localizer={localizer}
+        events={events}
+        startAccessor={(event) => new Date(event.start)}
+        endAccessor={(event) => new Date(event.end)}
+        eventPropGetter={eventStyleGetter}
+      />
     </div>
   );
 };
