@@ -8,6 +8,7 @@ import Services from '@src/components/Services/Services';
 import Head from 'next/head';
 import { Box } from '@chakra-ui/react';
 import MapComponent from '@src/components/Map/Map';
+import CalendarPage from './calendar';
 
 // import Map from '@src/components/Map/Map';
 
@@ -34,6 +35,9 @@ export default function Home() {
         <Separator text='' />
         <MapComponent />    
         <Separator text='' />
+        
+        
+
         
       </main>
 
