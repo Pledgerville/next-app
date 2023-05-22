@@ -9,7 +9,7 @@ type MonarchSocietyProps = {};
 const MonarchSociety: React.FC<MonarchSocietyProps> = () => {
   const data = {
     nodes: [
-      { id: 'Pledgerville', color: 'purple' },
+      { id: 'Pledgerville', color: '#e54304' },
       { id: 'Node 2', color: 'gray' },
       { id: 'Node 3', color: 'gray' },
       { id: 'Node 4', color: 'gray' },
@@ -46,51 +46,9 @@ const MonarchSociety: React.FC<MonarchSocietyProps> = () => {
           />
         </Flex>
       </Flex>
-      <MotionBox
-        w="100%"
-        h="100vh"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.8 } }}
-        position="relative"
-        zIndex={1} // Decrease the z-index value
-      >
-        <Image
-          src="/monarch_society.jpg"
-          alt="description-of-your-image"
-          h="100%"
-          w="100%"
-          objectFit="cover"
-        />
-        <Box
-          position="absolute"
-          top={0}
-          left={0}
-          right={0}
-          bottom={0}
-          bg="rgba(0, 0, 0, 0.6)"
-        />
-        <Flex
-          position="absolute"
-          top={0}
-          left={0}
-          right={0}
-          bottom={0}
-          alignItems="center"
-          justifyContent="center"
-          color="white"
-          zIndex={2} 
-          px={{ base: 4, md: 12 }}
-        >
-          <VStack spacing={4} textAlign={{ base: 'center', md: 'left' }} paddingBottom="360">
-            <Heading fontFamily="Linotype Didot" as="h2" size="2xl" mb="3" mt={{ base: 1, md: 10 }}>
-              Monarch Society
-            </Heading>
-          </VStack>
-        </Flex>
-      </MotionBox>
     </Box>
   );
 };
 
 export default MonarchSociety;
-``
+
