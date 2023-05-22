@@ -12,11 +12,14 @@ const MonarchSociety: React.FC<MonarchSocietyProps> = () => {
       { id: 'Pledgerville', color: 'purple' },
       { id: 'Node 2', color: 'gray' },
       { id: 'Node 3', color: 'gray' },
+      { id: 'Node 4', color: 'gray' },
+      { id: 'Node 5', color: 'gray' },
     ],
     links: [
       { source: 'Pledgerville', target: 'Node 2' },
-      { source: 'Node 2', target: 'Node 3' },
       { source: 'Node 3', target: 'Pledgerville' },
+      { source: 'Node 4', target: 'Pledgerville' },
+      { source: 'Node 5', target: 'Pledgerville' },
     ],
   };
 
