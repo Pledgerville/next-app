@@ -33,6 +33,7 @@
     "react-big-calendar": "^1.6.9",
     "react-calendar": "^4.2.1",
     "react-dom": "^18.2.0",
+    "react-force-graph-3d": "^1.23.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
     "react-leaflet": "^4.2.1",
@@ -44,6 +45,7 @@
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.3",
-    "@types/react": "^16.14.41"
+    "@types/react": "^16.14.41",
+    "@types/tween.js": "^18.6.1"
   }
 }

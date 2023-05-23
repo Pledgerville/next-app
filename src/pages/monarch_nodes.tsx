@@ -1,8 +1,7 @@
-import { MotionBox } from '../components/MotionElements/MotionElements';
 import { Box, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
-import * as TWEEN from '@tweenjs/tween.js';
+
 
 type MonarchSocietyProps = {};
 
@@ -34,7 +33,7 @@ const MonarchSociety: React.FC<MonarchSocietyProps> = () => {
         alignItems="center"
         justifyContent="center"
         color="black"
-        zIndex={2} // Increase the z-index value
+        zIndex={2}
       >
         <Flex flex="3" justifyContent="center" alignItems="center" maxWidth="50%">
           <ForceGraph3D
@@ -51,4 +50,3 @@ const MonarchSociety: React.FC<MonarchSocietyProps> = () => {
 };
 
 export default MonarchSociety;
-
