@@ -22,13 +22,7 @@ const Contact: React.FC<ContactUsProps> = () => {
     <Container maxW='5xl' mt={2} mb={2} centerContent overflow={'hidden'}>
       <Card w='5xl'>
         <CardBody>
-          <SimpleGrid
-            p={2}
-            w='full'
-            columns={2}
-            gap={2}
-            overflow={'hidden'}
-          >
+          <SimpleGrid p={2} w='full' columns={2} gap={2} overflow={'hidden'}>
             <Flex>
               <Box height='400px' w='400px' pl={1} overflow={'hidden'}>
                 <Heading

@@ -36,12 +36,12 @@ const CalendarPage = () => {
   };
 
   return (
-    <div>
-      <h1 className="calendar-header">Calendar</h1>
+    <div className='calendar-home'>
+      <h1 className='calendar-header'>Calendar</h1>
       <style jsx global>{`
         .rbc-calendar {
-          height: 500px;
-          background-color: #F9FAFB;
+          height: 700px;
+          background-color: #f9fafb;
           padding: 40px;
         }
 
@@ -89,16 +89,20 @@ const CalendarPage = () => {
           text-align: center;
           font-family: 'Linotype Didot', serif;
           font-weight: bold;
-          font-size: 24px; 
+          font-size: 30px;
+          margin-top: 4rem;
+          margin-bottom: 2rem;
         }
       `}</style>
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor={(event) => new Date(event.start)}
-        endAccessor={(event) => new Date(event.end)}
-        eventPropGetter={eventStyleGetter}
-      />
+      <div className='calendar'>
+        <Calendar
+          localizer={localizer}
+          events={events}
+          startAccessor={(event) => new Date(event.start)}
+          endAccessor={(event) => new Date(event.end)}
+          eventPropGetter={eventStyleGetter}
+        />
+      </div>
     </div>
   );
 };

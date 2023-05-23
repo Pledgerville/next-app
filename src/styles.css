@@ -1,3 +1,12 @@
 .custom_main {
-  height: '100vh';
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.calendar {
+  border-radius: 20px;
+  border: 1px solid;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  overflow: hidden;
 }

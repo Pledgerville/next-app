@@ -59,11 +59,14 @@ const MapComponent = () => {
   }, []);
 
   const containerStyle = {
-    width: '1200px',
-    height: '400px',
+    width: '1500px',
+    height: '600px',
+    marginTop: '30px',
     margin: '0 auto',
     borderRadius: '10px', // Add border-radius for curved edges
     overflow: 'hidden', // Hide overflow to hide the curved parts of the map
+    border: '1px solid gray',
+    marginBottom: '30px',
   };
 
   return <div ref={mapContainerRef} style={containerStyle}></div>;
