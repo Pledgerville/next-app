@@ -3,7 +3,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Feature: React.FC = () => {
-  const { ref, inView } = useInView({ threshold: 0.2 });
+  const { ref, inView } = useInView({ 
+    threshold: 0.2,
+    triggerOnce: true
+   });
 
   const containerVariants = {
     hidden: { opacity: 0 },

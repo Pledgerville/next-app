@@ -44,7 +44,7 @@ const SocialButton = ({
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <Box bg='white'>
+    <Box bg='white' mb={0} pt={0}>
       <Container
         as={Stack}
         maxW={'6xl'}
@@ -52,9 +52,8 @@ const Footer: React.FC<FooterProps> = () => {
         spacing={4}
         justify={'center'}
         align={'center'}
-        fontFamily="Linotype Didot"
+        fontFamily='Linotype Didot'
         fontSize='xl'
-
       >
         <Text fontSize='3xl' fontWeight='bold'>
           Pledgerville, Inc.
