@@ -59,8 +59,8 @@ const MonarchSociety: React.FC<AboutUsProps> = () => {
       </MotionBox>
       <Box
         position="absolute"
-        top={400}
-        left={520}
+        top={350}
+        left={600}
         right={1}
         bottom={0}
         display="flex"
@@ -104,7 +104,7 @@ const MonarchSociety: React.FC<AboutUsProps> = () => {
             <br/>
             <br/>
               <Link href="/monarch_nodes" style={{ color: 'blue' }}>
-              Click here to see who we are collaborating with to make change. 
+              Click here to be a Monarch. 
               </Link>
               
             </Text>
