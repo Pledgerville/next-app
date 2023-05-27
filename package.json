@@ -25,6 +25,7 @@
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "framer-motion": "^9.1.7",
+    "gsap": "^3.11.5",
     "leaflet": "^1.9.3",
     "moment": "^2.29.4",
     "next": "13.1.6",
@@ -33,6 +34,7 @@
     "react-big-calendar": "^1.6.9",
     "react-calendar": "^4.2.1",
     "react-dom": "^18.2.0",
+    "react-force-graph-3d": "^1.23.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
     "react-leaflet": "^4.2.1",
@@ -43,7 +45,9 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@types/gsap": "^3.0.0",
     "@types/leaflet": "^1.9.3",
-    "@types/react": "^16.14.41"
+    "@types/react": "^16.14.41",
+    "@types/tween.js": "^18.6.1"
   }
 }

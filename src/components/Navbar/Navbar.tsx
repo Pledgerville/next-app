@@ -81,10 +81,13 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <Link href='/monarch'>Monarch Society</Link>
               </MenuItem>
               <MenuItem>
-                <Link href='/contact-us'>Events</Link>
+                <Link href='/events'>Events</Link>
               </MenuItem>
               <MenuItem>
-                <Link href='/contact-us'>News</Link>
+                <Link href='/news'>News</Link>
+              </MenuItem>
+              <MenuItem>
+                <Link href='/contact-us'>Contact Us</Link>
               </MenuItem>
             </MenuList>
           </Menu>

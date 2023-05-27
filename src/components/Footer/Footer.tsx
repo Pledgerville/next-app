@@ -59,10 +59,11 @@ const Footer: React.FC<FooterProps> = () => {
           Pledgerville, Inc.
         </Text>
         <Stack direction={'row'} spacing={6}>
-          <Link href={'#'}>Home</Link>
-          <Link href={'#'}>Services</Link>
+          <Link href={'/'}>Home</Link>
           <Link href={'/about-us'}>About Us</Link>
+          <Link href={'/calendar'}>Calendar</Link>
           <Link href={'#'}>Contact</Link>
+          
         </Stack>
         <Stack direction={'row'} spacing={1}>
           <SocialButton label={'Facebook'} href={'#'}>
