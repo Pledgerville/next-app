@@ -9,6 +9,7 @@ import {
   MenuItem,
   Icon,
   Textarea,
+  IconButton,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { ChevronDownIcon } from '@chakra-ui/icons';
@@ -46,7 +47,11 @@ const Navbar: React.FC<NavbarProps> = () => {
       justifyContent='space-between'
       align='center'
       wrap='wrap'
-      as='nav'
+      as='header'
+      position='fixed'
+      width='100%'
+      top={0}
+      zIndex={1}
     >
       <Box fontFamily='Linotype Didot'>
         <Text fontSize='3xl' fontWeight='bold'>
@@ -65,14 +70,17 @@ const Navbar: React.FC<NavbarProps> = () => {
           <NavItem to='/calendar'>Calendar</NavItem>
           <Menu>
             <MenuButton
+              className='menu-btn'
               as={Button}
               alignItems='center'
               cursor='pointer'
               fontFamily='Linotype Didot'
               fontSize='xl'
               fontWeight='bold'
-              rightIcon={<ChevronDownIcon />}
+              rightIcon={<ChevronDownIcon color='black' />}
               backgroundColor='white'
+              color='black'
+              _hover={{ backgroundColor: 'transparent' }}
             >
               More
             </MenuButton>

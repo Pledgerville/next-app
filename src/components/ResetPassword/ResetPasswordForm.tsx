@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Button, Flex, Icon, Input, Text } from '@chakra-ui/react';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
-import { BsDot, BsReddit } from 'react-icons/bs';
+import { BsDot } from 'react-icons/bs';
 import { auth } from '../../firebase/client';
+import { useRouter } from 'next/navigation';
 
-type ResetPasswordProps = {};
+type ResetPasswordFormProps = {};
 
-const ResetPassword: React.FC<ResetPasswordProps> = ({}) => {
+const ResetPasswordForm: React.FC<ResetPasswordFormProps> = ({}) => {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [success, setSuccess] = useState(false);
   const [sendPasswordResetEmail, sending, error] =
@@ -19,14 +21,24 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({}) => {
     setSuccess(true);
   };
   return (
-    <Flex direction='column' alignItems='center' width='100%'>
+    <Flex
+      direction='column'
+      alignItems='center'
+      justifyContent={'center'}
+      width='100%'
+      mx={30}
+      bg={'white'}
+      h={'600px'}
+    >
       <Text fontWeight={700} mb={2}>
         Reset your password
       </Text>
       {success ? (
-        <Text mb={4}>Check your email :)</Text>
+        <Flex>
+          <Text mb={4}>Check your email :)</Text>
+        </Flex>
       ) : (
-        <>
+        <Flex direction={'column'}>
           <Text fontSize='sm' textAlign='center' mb={2}>
             Enter the email associated with your account and we will send you a
             reset link
@@ -68,7 +80,7 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({}) => {
               Reset Password
             </Button>
           </form>
-        </>
+        </Flex>
       )}
       <Flex
         alignItems='center'
@@ -77,11 +89,11 @@ const ResetPassword: React.FC<ResetPasswordProps> = ({}) => {
         fontWeight={700}
         cursor='pointer'
       >
-        <Text onClick={() => {}}>LOGIN</Text>
+        <Text onClick={() => router.push('/admin/login')}>LOGIN</Text>
         <Icon as={BsDot} />
-        <Text onClick={() => {}}>SIGN UP</Text>
+        <Text onClick={() => router.push('/admin/signup')}>SIGN UP</Text>
       </Flex>
     </Flex>
   );
 };
-export default ResetPassword;
+export default ResetPasswordForm;

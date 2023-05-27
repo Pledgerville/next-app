@@ -1,71 +1,102 @@
-import {
-  Flex,
-  Box,
-  FormControl,
-  FormLabel,
-  Input,
-  Checkbox,
-  Stack,
-  Link,
-  Button,
-  Heading,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Flex, Text } from '@chakra-ui/react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useRouter } from 'next/navigation';
+import { auth } from '../../firebase/client';
+import { FIREBASE_ERRORS } from '../../firebase/error';
+import InputItem from '../Inputs/InputItem';
 
-type LoginFormProps = {};
+type LoginProps = {};
 
-const LoginForm: React.FC<LoginFormProps> = () => {
+const LoginForm: React.FC<LoginProps> = ({}) => {
+  const router = useRouter();
+  const [form, setForm] = useState({
+    email: '',
+    password: '',
+  });
+  const [formError, setFormError] = useState('');
+
+  const [signInWithEmailAndPassword, _, loading, authError] =
+    useSignInWithEmailAndPassword(auth);
+
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (formError) setFormError('');
+    if (!form.email.includes('@')) {
+      return setFormError('Please enter a valid email');
+    }
+
+    // Valid form inputs
+    signInWithEmailAndPassword(form.email, form.password);
+    router.replace('/admin/dashboard');
+  };
+
+  const onChange = ({
+    target: { name, value },
+  }: React.ChangeEvent<HTMLInputElement>) => {
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   return (
-    <Flex
-      minH={'100vh'}
-      align={'center'}
-      justify={'center'}
-      bg={useColorModeValue('gray.50', 'gray.800')}
-    >
-      <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
-        <Stack align={'center'}>
-          <Heading fontSize={'4xl'}>Sign in to your account</Heading>
-        </Stack>
-        <Box
-          rounded={'lg'}
-          bg={useColorModeValue('white', 'gray.700')}
-          boxShadow={'lg'}
-          p={8}
+    <>
+      <form onSubmit={onSubmit}>
+        <InputItem
+          name='email'
+          placeholder='email'
+          type='text'
+          mb={6}
+          onChange={onChange}
+        />
+        <InputItem
+          name='password'
+          placeholder='password'
+          type='password'
+          onChange={onChange}
+          mb={2}
+        />
+        <Text textAlign='center' mt={2} fontSize='10pt' color='red'>
+          {formError ||
+            FIREBASE_ERRORS[authError?.message as keyof typeof FIREBASE_ERRORS]}
+        </Text>
+        <Button
+          width='100%'
+          height='36px'
+          mb={4}
+          mt={2}
+          type='submit'
+          isLoading={loading}
         >
-          <Stack spacing={4}>
-            <FormControl id='email'>
-              <FormLabel>Email address</FormLabel>
-              <Input type='email' />
-            </FormControl>
-            <FormControl id='password'>
-              <FormLabel>Password</FormLabel>
-              <Input type='password' />
-            </FormControl>
-            <Stack spacing={10}>
-              <Stack
-                direction={{ base: 'column', sm: 'row' }}
-                align={'start'}
-                justify={'space-between'}
-              >
-                <Checkbox>Remember me</Checkbox>
-                <Link color={'blue.400'}>Forgot password?</Link>
-              </Stack>
-              <Button
-                bg={'blue.400'}
-                color={'white'}
-                _hover={{
-                  bg: 'blue.500',
-                }}
-              >
-                Sign in
-              </Button>
-            </Stack>
-          </Stack>
-        </Box>
-      </Stack>
-    </Flex>
+          Log In
+        </Button>
+        <Flex justifyContent='center' mb={2}>
+          <Text fontSize='9pt' mr={1}>
+            Forgot your password?
+          </Text>
+          <Text
+            fontSize='9pt'
+            color='blue.500'
+            cursor='pointer'
+            onClick={() => router.push('/admin/reset-password')}
+          >
+            Reset
+          </Text>
+        </Flex>
+        <Flex fontSize='9pt' justifyContent='center'>
+          <Text mr={1}>New here?</Text>
+          <Text
+            color='blue.500'
+            fontWeight={700}
+            cursor='pointer'
+            onClick={() => router.push('/admin/signup')}
+          >
+            SIGN UP
+          </Text>
+        </Flex>
+      </form>
+    </>
   );
 };
 export default LoginForm;
