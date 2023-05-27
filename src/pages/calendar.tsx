@@ -37,6 +37,7 @@ const CalendarPage = () => {
 
   return (
     <div className='calendar-home'>
+      {console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY)}
       <h1 className='calendar-header'>Calendar</h1>
       <style jsx global>{`
         .rbc-calendar {
