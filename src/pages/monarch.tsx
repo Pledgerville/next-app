@@ -103,7 +103,7 @@ const MonarchSociety: React.FC<AboutUsProps> = () => {
             they celebrated the transformative power of the monarch butterfly, guiding their collective journey.
             <br/>
             <br/>
-              <Link href="/monarch_nodes" style={{ color: 'blue' }}>
+              <Link href="/monarch_collaborator" style={{ color: 'blue' }}>
               Click here to be a Monarch. 
               </Link>
               
