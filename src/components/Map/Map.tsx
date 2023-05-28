@@ -59,7 +59,7 @@ const MapComponent = () => {
   }, []);
 
   const containerStyle = {
-    width: '1500px',
+    width: '1440px',
     height: '600px',
     marginTop: '30px',
     margin: '0 auto',
