@@ -31,7 +31,7 @@ const FeaturedEvents = () => {
       <Text fontFamily="Linotype Didot" align="center" fontSize="2xl" fontWeight="extrabold" mb={4}>
         Featured Events
       </Text>
-      <Text align="center" mb={4}>
+      <Text fontFamily="Linotype Didot" align="center" mb={4}>
         Current Date: {today}
       </Text>
       <Box mb={4} maxWidth="300px" mx="auto">
