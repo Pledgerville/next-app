@@ -89,7 +89,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <Link href='/monarch'>Monarch Society</Link>
               </MenuItem>
               <MenuItem>
-                <Link href='/events'>Events</Link>
+                <Link href='/featured_events'>Featured Events</Link>
               </MenuItem>
               <MenuItem>
                 <Link href='/news'>News</Link>
