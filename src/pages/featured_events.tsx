@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import moment from 'moment-timezone';
 import { Box, Flex, Image, Text, Input, Stack } from '@chakra-ui/react';
 
 const FeaturedEvents = () => {
@@ -19,7 +20,8 @@ const FeaturedEvents = () => {
     },
   ];
 
-  const today = new Date().toISOString().slice(0, 10);
+  const view_today = moment().tz('America/Los_Angeles').format('MMMM D, YYYY');
+  const today = moment().tz('America/Los_Angeles').format('YYYY-MM-DD');
   const [searchValue, setSearchValue] = useState('');
 
   const filteredEvents = upcomingEvents.filter((event) =>
@@ -32,7 +34,7 @@ const FeaturedEvents = () => {
         Featured Events
       </Text>
       <Text fontFamily="Linotype Didot" align="center" mb={4}>
-        Current Date: {today}
+        {view_today}
       </Text>
       <Box mb={4} maxWidth="300px" mx="auto">
         <Input
